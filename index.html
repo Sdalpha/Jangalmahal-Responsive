@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResTesing1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo">Jungle</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="https://www.linkedin.com/in/satyajit-dutta-9a3b021b9/" target="_black">About</a></li>
+            <li class="ctn"><a href="#">Contuct Us</a></li>
+        </ul>
+        <img src="./images/img/menu-btn.png" class="menu-btn" alt="">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Explore The Jangle Mahal</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+
+    <!-- Events ==================== -->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./images/img/img1.png" alt="">
+                <h4>Sutan Camp Trek</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sunt. Atque omnis magnam dolorem perferendis?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="./images/img/img2.png" alt="">
+                <h4>12 Mile Tour</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sunt. Atque omnis magnam dolorem perferendis?</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+  <!-- explore ================================= -->
+    <section id="explore" class="explore">
+        <div class="explore-content">
+            <h1>Explore The JanglaMahal</h1>
+            <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta voluptates fuga sequi reprehenderit quae nemo.</p>
+        <a href="#" class="ctn">Lern More</a>
+        </div>
+    </section>
+
+    <section id="tours" class="tour">
+        <div class="row">
+            <div class="col content-col">
+                <h1>Upcoming Tour And Destination</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla id animi voluptatibus, ullam impedit sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, soluta.
+                </p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./images/img/img3.png" alt="">
+                    <img src="./images/img/img4.png" alt="">
+                    <img src="./images/img/img5.png" alt="">
+                    <img src="./images/img/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="rights">
+            <p>Ranibandh, Bankura, West Bengal | Phone - +91 9734182775 | Email - satoxonik@gmail.com</p>
+            <p>Copyright © 2022 JanglaMahal Lovers</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLink = document.querySelector('.nav-links');
+        menuBtn.addEventListener('click',()=>{
+            navLink.classList.toggle('mobile-menu');
+        })
+    </script>
+
+
+</body>
+</html>

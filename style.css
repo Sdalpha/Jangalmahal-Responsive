@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+ul {
+  list-style: none;
+}
+
+/* navbar css ==================>*/
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav-links li {
+  margin: 0 30px;
+}
+.nav-links li:hover {
+  border-bottom: 2px solid #fc036b;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/img/mainBg.jpg");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.header-content {
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+.header-content h2 {
+  font-size: 4vmin;
+}
+.line {
+  width: 150px;
+  height: 4px;
+  background: #12a579;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.ctn {
+  padding: 8px 15px;
+  background: #12a579;
+  border-radius: 30px;
+  color: whitesmoke;
+}
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Mobole Device */
+@media only screen and (max-width: 850px) {
+  .menu-btn {
+    display: block;
+  }
+  nav {
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #12a579;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: #484872;
+    margin-top: -700px;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu {
+    margin-top: 0px;
+    border-radius: 0 0 150px 0;
+  }
+  .nav-links li {
+    margin: 30px;
+  }
+  /* event section---------------------> */
+
+  .row {
+    flex-direction: column;
+  }
+  .col img {
+    max-width: 90%;
+  }
+  .row .col {
+    margin: 20px auto;
+  }
+
+  /* explore section  ------------->*/
+
+  .explore-content {
+    min-width: 100%;
+    justify-content: center;
+  }
+
+  /* tuor---------------------------> */
+  .tour .col {
+    min-width: 100%;
+  }
+  .image-gallery {
+    justify-content: center;
+    align-items: center;
+  }
+  .image-gallery img {
+    width: 90%;
+  }
+  footer {
+    padding: 10px;
+  }
+}
+
+/* events */
+
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: #484872;
+}
+.events {
+  width: 100%;
+}
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  /* border: 2px solid; */
+}
+.row .col {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.row .col p {
+  padding: 0 40px;
+  text-align: justify;
+}
+.row .col h4 {
+  font-size: 4vmin;
+}
+.events .row {
+  margin-top: 50px;
+}
+h4 {
+  font-size: 3vnim;
+  color: #484872;
+  margin: 20px auto;
+}
+p {
+  color: #585858;
+  /* padding: 0px 40px; */
+}
+.events .ctn {
+  margin-top: 30px;
+}
+
+/* explore section-------------> */
+
+.explore {
+  width: 100%;
+  height: 80vh;
+  background: url("./images/img/bg2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.explore-content {
+  width: 50%;
+  padding: 50px;
+  color: whitesmoke;
+  /* display: flex; */
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.explore .explore-content h1 {
+  font-size: 5vmin;
+}
+
+.explore .explore-content .line {
+  margin-bottom: 30px;
+}
+.explore .explore-content p {
+  color: #e0e0e0;
+  margin-bottom: 30px;
+}
+.explore-content .ctn {
+  margin-top: 30px;
+}
+/* tour section----------------> */
+
+.content-col {
+  width: 40%;
+  /* border: 2px solid #484872; */
+}
+.image-col {
+  width: 60%;
+}
+.tour .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.image-gallery img {
+  max-width: 300px;
+  margin: 10px;
+}
+.content-col h1 {
+  margin-bottom: 30px;
+  font-size: 4vmin;
+}
+/* .content-col .line{
+  margin-left: -1px;
+} */
+.content-col p {
+  padding: 0;
+  text-align: center;
+  margin-bottom: 30px auto;
+}
+footer {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  text-align: center;
+  font-size: 2vmin;
+  background: linear-gradient(to bottom, #282847, #292942);
+}
+footer p {
+  color: whitesmoke;
+  margin: 20px auto;
+}
+
+/* EVENT - resposie------------> */
